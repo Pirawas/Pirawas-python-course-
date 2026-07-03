@@ -12,8 +12,23 @@ print("My name is Your Name")
 # Line 2: Your age
 # Line 3: Your favorite hobbyๅ
 # Write your code here:
+from dataclasses import dataclass
+@dataclass
+class student:
+    student_id: str
+    name: str
+    age: int
+    gpa: float
+student_id = str(input("Enter your ID: "))
+name = str(input("Enter your name: "))
+age = int(input("Enter your Age: "))
+gpa = float(input("Enter your GPA: "))
 
-
+s1 = student(student_id, name, age, gpa)
+print(s1.student_id)
+print(s1.name)
+print(s1.age)
+print(s1.gpa)
 # Exercise 4: Print with Different Content
 # Use print() to display the following (one per line):
 # - A number (any number you like)
