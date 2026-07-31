@@ -5,6 +5,8 @@ another_empty_tuple = tuple()
 # Tuple with values
 coordinates = (10, 20)
 rgb_color = (255, 128, 0)
+rgb_list = list(rgb_color) # have to change type of tuple to list before change value.
+
 mixed_tuple = (1, "hello", 3.14, True)
 
 # Single element tuple (note the comma!)
