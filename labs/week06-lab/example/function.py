@@ -77,7 +77,7 @@ print("\n=== PART 3: FUNCTIONS WITH RETURN VALUES ===")
 def add_numbers(a, b):
     """Adds two numbers and returns the result"""
     result = a + b
-    return result
+    return result # **จำเป็นต้องมี**
 
 print("Using functions that return values:")
 sum1 = add_numbers(5, 3)
@@ -106,7 +106,7 @@ print()
 # Example 3: Using returned values in expressions
 def multiply(x, y):
     """Multiplies two numbers"""
-    return x * y
+    return x * y #แบบย่อ ของ return result
 
 def square(n):
     """Returns the square of a number"""
@@ -117,6 +117,12 @@ result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
+# จงหาผลรันโปรแกรมใน Example 3: ด้านบน
+"""
+Using return values in expessions:
+multiply(4, 5) + square(3) = 20 + 9 = 29
+
+"""
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
 # =============================================================================
