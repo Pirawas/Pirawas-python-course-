@@ -204,29 +204,29 @@ text = "welcome to the world of python"
 print(f"Original: {text}")
 print(f"Upper: {text.upper()}")
 print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Title: {text.title()}") #ตัวใหญ่ตัวแรกที่เว้นวรรค
+print(f"Capitalize: {text.capitalize()}") #ตัวใหญ่แค่ตัวแรกของประโยค
 
 # Search methods
 print(f"Find 'world': {text.find('world')}")
 print(f"Count 'o': {text.count('o')}")
-print(f"Starts with 'welcome': {text.startswith('welcome')}")
-print(f"Ends with 'python': {text.endswith('python')}")
+print(f"Starts with 'welcome': {text.startswith('welcome')}") #boolean
+print(f"Ends with 'python': {text.endswith('python')}") #boolean
 
 # Modification methods
 print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
+words = text.split() #['welcome', 'to', 'the', 'world' 'of', 'Java']
 print(f"Split into words: {words}")
 print(f"Join with '-': {'-'.join(words)}")
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}") #เช็คว่าทุกตัวอักษรเป็นตัวเลขหรือตัวอักษร
+print(f"isalpha(): {test_str.isalpha()}") #ตัวอักษรทั้งหมดไหม
+print(f"isdigit(): {test_str.isdigit()}") #ตัวเลขทั้งหมดไหม
+print(f"isupper(): {test_str.isupper()}") #ต้องมีอย่างน้อยเป็นตัวอักษรตัวใหญ่
+print(f"islower(): {test_str.islower()}") #ต้องมีอย่างน้อยเป็นตัวอกษรตัวเล็ก
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
