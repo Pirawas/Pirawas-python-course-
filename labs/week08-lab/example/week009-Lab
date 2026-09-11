@@ -1,0 +1,50 @@
+units = 0
+cost = 0
+service = 25
+choice = 0
+
+def calculate_electricity_cost(units=0):
+
+    if units <= 50:
+        cost = (units * 2.50) + service
+        print("1-50 หน่วย: 2.50 บาท")
+        print("ค่าบริการ: 25.00 บาท")
+        print("รวมค่าไฟฟ้าทั้งสิ้น:", cost)
+
+    elif units <= 100:
+        cost = (50 * 2.50) + ((units - 50) * 3.00) + service
+        print("1-50 หน่วย: 2.50 บาท")
+        print("51-100 หน่วย: 3.00 บาท")
+        print("ค่าบริการ: 25.00 บาท")
+        print("รวมค่าไฟฟ้าทั้งสิ้น:", cost)
+
+    elif units <= 200:
+        cost = (50 * 2.50) + (50 * 3.00) + ((units - 100) * 3.50) + service
+        print("1-50 หน่วย: 2.50 บาท")
+        print("51-100 หน่วย: 3.00 บาท")
+        print("101-200 หน่วย: 3.50 บาท")
+        print("ค่าบริการ: 25.00 บาท")
+        print("รวมค่าไฟฟ้าทั้งสิ้น:", cost)
+
+    elif units > 200:
+        cost = (50 * 2.50) + (50 * 3.00) + (100 * 3.50) + ((units - 200) * 4.00) + service
+        print("1-50 หน่วย: 2.50 บาท")
+        print("51-100 หน่วย: 3.00 บาท")
+        print("101-200 หน่วย: 3.50 บาท")
+        print("มากกว่า 200 หน่วย: 4.00 บาท")
+        print("ค่าบริการ: 25.00 บาท")
+        print("รวมค่าไฟฟ้าทั้งสิ้น:", cost)
+
+
+while True:
+    print( "==== โปรแกรมคำนวณค่าไฟฟ้า ====" )
+    print("1. คำนวณค่าไฟ")
+    print("2. ออกจากโปรแกรม")
+    choice = int(input("เลือกเมนู:"))
+    if choice == 1:
+        units = float(input("กรอกจำนวนหน่วยไฟฟ้า:"))
+        calculate_electricity_cost(units)
+    elif choice == 2:
+        break
+    else:
+        print("ตัวเลือกไม่ถูกต้อง")
