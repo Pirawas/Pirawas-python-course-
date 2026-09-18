@@ -15,6 +15,8 @@ try:
     else:
         raise ValueError
         print("Can Enter only signal + - * /")
+        
+    print(f"{Num1} {signal} {Num2} = {result}")
 
 except ValueError:
     print("Can enter only Number")
